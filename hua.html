@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#href{
+			width:1000px;
+			height:800px;
+			margin:0 auto;
+			background-color:#e5e5e5;
+		}
+		body{
+			margin:0;
+			padding:0;
+			background-color:#eee;
+		}
+		ul{
+			padding:0;
+			margin:0;
+		}
+		ul:after{
+			content:"";
+			display:block;
+			clear:both;
+		}
+		a{
+			text-decoration:none;
+			color:#000;
+			display:block;
+			width:210px;
+			height:330px;
+			margin:20px auto 0;
+
+		}
+		li{
+			position:relative;
+			list-style:none;
+			width:250px;
+			height:350px;
+			overflow: hidden;
+			cursor: pointer;
+			float:left;
+			border-radius:10px;
+		}
+	
+	li a img{
+			width:210px;
+			height:210px;
+		}
+		li a div{
+			width:210px;
+			height:42px;
+			margin-bottom:10px;
+			margin-top:10px;
+		}
+		li a .money{
+			font-size:18px;
+			color:#fd3f31;
+		}
+		li a i{
+			font-size: 14px;
+            color: #9b9b9b;
+		}
+		li a .number{
+			color: #9b9b9b;
+            font-size: 12px;
+            position:absolute;
+            right:10px;
+            bottom:20px;
+		}
+		@keyframes scale{
+			0%{}
+			100%{transform:scale(1.1);}
+		}
+		li a img:hover{
+			animation:scale 0.3s forwards;
+		}
+		li:hover{
+			background-color:#fff;
+			transition:background-color 0.3s;
+		}
+		#hua{	
+			width:1000px;
+			height:900px;
+			margin:0 auto;
+			background-color:#e5e5e5;
+		}
+		#hua p{
+			font-size:24px;
+			text-indent:1em;
+		}
+		#hua .jianjie{
+			text-indent:3em;
+			font-size:18px;
+		}
+		#hua img{
+			width:300px;
+			height:400px;
+		}
+		#hua .img{
+			display:flex;
+			width:1000px;
+			height:400px;
+			flex-direction:row;
+			justify-content:space-between;
+			cursor:pointer;
+		}
+		#hua .alt{
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+			cursor:pointer;
+		}
+		#hua .alt span{
+			font-size:20px;
+			color:red;
+		}
+	</style>
+</head>
+<body>
+<div id="hua">
+   <p>个人简介</p>
+   <div class="jianjie">大家好,我叫职晶华，我非常喜欢吃粉面彩蛋！</div>
+   <p>个人风采</p>
+   <div class="img">
+       <img src="./img/1.jpg" title="认真的挑选">
+       <img src="./img/2.jpg" title="王者的风范">
+       <img src="./img/3.jpg" title="落寞的背影">
+   </div>
+   <div class="alt">
+       <span>认真的挑选</span>
+       <span>王者的风范</span>
+       <span>落寞的背影</span>
+   </div>
+   <p>家乡简介</p>
+   <div class="jianjie">临汾地处太原、郑州、西安三个省会城市连接中点，区位优势突出，交通通讯便捷。位于山西省西南部，东倚太岳，与长治、晋城为邻；西临黄河，与陕西省隔河相望；北起韩信岭，与晋中、吕梁毗连；南与运城市接壤。因地处汾水之滨而得名，临汾“东临雷霍，西控河汾，南通秦蜀，北达幽并”，地理位置重要，自古为兵家必争之地。&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp该市历史悠久，是华夏民族的重要发祥地之一和黄河文明的摇篮，有“华夏第一都”之称；该市是华北地区重要的粮棉生产基地，盛产小麦、棉花等，素有“棉麦之乡”和“膏腴之地”美誉；该市已形成多元产业体系，是山西省新型能源和工业基地建设的重要组成部分；该市自然资源丰富，是中国三大优质主焦煤基地之一；该市非物质文化种类繁多，有蒲州梆子、威风锣鼓等多种民间艺术形式，被誉为“梅花之乡”、“剪纸之乡”和“锣鼓之乡”。 
+   </div>
+   <p>个人店铺</p>
+</div>
+<div id="href">
+	<ul>
+		<li class="num1">
+			<a href="#" target="_blank">
+			   <img src="https://img.alicdn.com/imgextra/i4/1824500022/O1CN01OVkMJi1C27SZGtxUa_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt="">
+			   <div>职掌柜粉面菜蛋方便面金汤肥牛酸辣粉泡面整箱组合桶装...</div>
+			   <span class="money">￥20.80</span>
+			   <i>￥22.80</i>
+			   <span class="number">月销 35</span>
+		    </a>
+		</li>
+		<li class="num2">
+			<a href="#" target="_blank">
+			   <img src="https://img.alicdn.com/imgextrahttps://img.alicdn.com/imgextra/i3/699140838/O1CN01JoMwmr1I3qeOe2k7v_!!699140838-0-alimamacc.jpg_468x468q75.jpg_.webp" alt="">
+			   <div>职杨掌柜粉面菜蛋6桶装粉丝麻辣烫粉菜蛋面泡面美味金...</div>
+			   <span class="money">￥12.90</span>
+			   <i>￥20.80</i>
+			   <span class="number">月销 200+</span>
+		    </a>
+		</li>
+		<li class="num3">
+			<a href="#" target="_blank">
+			   <img src="https://img.alicdn.com/imgextra/i3/1069160055/O1CN010tmLs31CHEWpuCpP6_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt="">
+			   <div>粉面菜蛋杨掌柜番茄牛腩味金汤肥牛酸辣粉泡面方便面整...</div>
+			   <span class="money">￥13.50</span>
+			   <i>￥17.80</i>
+			   <span class="number">月销 60</span>
+		    </a>
+		</li>
+		<li class="num4">
+			<a href="#" target="_blank">
+			   <img src="https://img.alicdn.com/imgextra/i3/113429095/O1CN012H3YgWsjAArquu0_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt="">
+			   <div>职掌柜粉面菜蛋非油炸方便面粉丝抖音同款宿舍经典桶面...</div>
+			   <span class="money">￥12.80</span>
+			   <i>￥20.80</i>
+			   <span class="number">月销 30</span>
+		    </a>
+		</li>
+		<li class="num5">
+			<a href="#" target="_blank">
+			   <img src="https://img.alicdn.com/imgextra/i4/59410747/O1CN01Jnbljg1HOAaGPZQU2_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt="">
+			   <div>雪碧柠檬味汽水300mlx6瓶装 可口可乐碳酸饮料小瓶装毫...</div>
+			   <span class="money">￥9.80</span>
+			   <i>￥19.80</i>
+			   <span class="number">月销 400+</span>
+		    </a>
+		</li>
+		<li class="num6">
+			<a href="#" target="_blank">
+			   <img src="https://img.alicdn.com/imgextra/i1/30869979/O1CN01GPFP3w2NaR5WSXPYX_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt="">
+			   <div>可口可乐小瓶装300ml*6瓶雪碧芬达零度可乐小瓶碳酸饮...</div>
+			   <span class="money">￥6.10</span>
+			   <i>￥13.10</i>
+			   <span class="number">月销 35</span>
+		    </a>
+		</li>
+		<li class="num7">
+			<a href="#" target="_blank">
+			   <img src="https://img.alicdn.com/imgextra/i4/101025137/O1CN01PMYeWP1nonL8XhPIK_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt="">
+			   <div>卫龙辣条零食大礼包麻辣儿时经典怀旧大面筋辣片麻辣味...</div>
+			   <span class="money">￥23.90</span>
+			   <i>￥29.90</i>
+			   <span class="number">月销 4万+</span>
+		    </a>
+		</li>
+		<li class="num8">
+			<a href="#" target="_blank">
+			   <img src="https://img.alicdn.com/imgextra/i3/2228680174/O1CN01jyiC4Y1D9jdb2u0WY_!!0-saturn_solar.jpg_468x468q75.jpg_.webp" alt="">
+			   <div>卫龙辣条小面筋大全礼包网红解馋90后儿时怀旧小吃零食...</div>
+			   <span class="money">￥7.80</span>
+			   <i>￥8.80</i>
+			   <span class="number">月销 1万+</span>
+		    </a>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
